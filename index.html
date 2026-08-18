@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bouncing Ball</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: #1a1a1a;
+    }
+
+    .ball {
+      width: 60px;
+      height: 60px;
+      background-color: #ff4757;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      animation: moveUp 2s infinite ease-in-out alternate;
+    }
+
+    @keyframes moveUp {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-80vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
